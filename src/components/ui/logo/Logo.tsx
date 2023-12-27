@@ -10,7 +10,7 @@ export const Logo = () => {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <g clip-path="url(#clip0_77_42)">
+        <g clipPath="url(#clip0_77_42)">
           <path d="M82 27H0V54L82 27Z" fill="#EFEFEF" />
           <path d="M82 0H0V27L82 0Z" fill="#EFEFEF" />
         </g>

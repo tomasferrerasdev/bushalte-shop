@@ -4,10 +4,10 @@ import { Logo } from '../logo/Logo';
 
 export const TopMenu = () => {
   return (
-    <nav className="flex p-6 justify-between items-center w-full">
+    <nav className="flex p-4 sm:p-6 justify-between items-center w-full">
       <Logo />
 
-      <div className="flex items-center ">
+      <div className="flex items-center">
         <Link href="/search" className="px-4">
           <IoSearchOutline className="w-5 h-5" />
         </Link>
