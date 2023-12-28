@@ -1,8 +1,11 @@
+'use client';
+import { useUiStore } from '@/store/ui/ui-store';
 import Link from 'next/link';
 import { IoCartOutline, IoMenuOutline, IoSearchOutline } from 'react-icons/io5';
 import { Logo } from '../logo/Logo';
 
 export const TopMenu = () => {
+  const openMenu = useUiStore((state) => state.openSideMenu);
   return (
     <nav className="flex py-4 sm:py-6 justify-between items-center w-full">
       <Logo />
@@ -19,8 +22,8 @@ export const TopMenu = () => {
             <IoCartOutline className="w-5 h-5" />
           </div>
         </Link>
-        <button className="px-4 rounded-sm transition-all">
-          <IoMenuOutline className="w-5 h-5" />
+        <button className="px-4 rounded-sm transition-all" onClick={openMenu}>
+          <IoMenuOutline className="w-7 h-7" />
         </button>
       </div>
     </nav>
