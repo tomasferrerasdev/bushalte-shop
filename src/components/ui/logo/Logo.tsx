@@ -20,7 +20,7 @@ export const Logo = () => {
           </clipPath>
         </defs>
       </svg>
-      <span className="antialiased">büshalte</span>
+      <span className="antialiased">büshalte shop</span>
     </Link>
   );
 };

@@ -4,7 +4,7 @@ import { Logo } from '../logo/Logo';
 
 export const TopMenu = () => {
   return (
-    <nav className="flex p-4 sm:p-6 justify-between items-center w-full">
+    <nav className="flex py-4 sm:py-6 justify-between items-center w-full">
       <Logo />
 
       <div className="flex items-center">
@@ -13,7 +13,7 @@ export const TopMenu = () => {
         </Link>
         <Link href="/cart" className="px-4">
           <div className="relative">
-            <span className="absolute text-xs rounded-full px-1 font-medium -top-2 -right-2 bg-blue-700">
+            <span className="absolute text-xs rounded-full px-1 font-medium -top-2 -right-2 bg-teal-600">
               3
             </span>
             <IoCartOutline className="w-5 h-5" />
