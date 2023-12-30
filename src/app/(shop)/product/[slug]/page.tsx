@@ -18,7 +18,7 @@ export default function Home({ params }: Props) {
     <div
       className={`${inter.className} h-full md:h-[calc(100vh-126px)] grid gap-6 md:grid-cols-6 pb-8`}
     >
-      <div className="group min-h-[30vh] flex h-full w-full items-center justify-center overflow-hidden rounded-lg border hover:border-accent bg-black relative border-neutral-800 md:col-span-4 md:row-span-1">
+      <div className="group min-h-[30vh] flex h-full w-full items-center justify-center overflow-hidden rounded-lg border bg-black relative border-neutral-800 md:col-span-4 md:row-span-1">
         <Image
           src={product.images[0]}
           className="relative h-full w-full object-contain transition duration-300 ease-in-out group-hover:scale-105"

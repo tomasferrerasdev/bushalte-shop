@@ -21,6 +21,7 @@ export const FeaturedProductGrid = ({ products }: Props) => {
                 sizes={'(min-width: 768px) 66vw, 100vw'}
                 src={products[0].images[0]}
                 alt={products[0].slug}
+                priority
               />
               <div className="absolute bottom-0 left-0 flex w-full px-4 pb-4 @container/label lg:px-20 lg:pb-[35%]">
                 <div className="flex items-center rounded-full border bg-white/70 p-1 text-xs font-semibold text-black backdrop-blur-md dark:border-neutral-800 dark:bg-black/70 dark:text-white">
@@ -50,6 +51,7 @@ export const FeaturedProductGrid = ({ products }: Props) => {
                 sizes={'(min-width: 768px) 66vw, 100vw'}
                 src={products[1].images[0]}
                 alt={products[1].slug}
+                priority
               />
               <div className="absolute bottom-0 left-0 flex w-full px-4 pb-4 @container/label">
                 <div className="flex items-center rounded-full border bg-white/70 p-1 text-xs font-semibold text-black backdrop-blur-md dark:border-neutral-800 dark:bg-black/70 dark:text-white">
@@ -79,6 +81,7 @@ export const FeaturedProductGrid = ({ products }: Props) => {
                 sizes={'(min-width: 768px) 66vw, 100vw'}
                 src={products[2].images[0]}
                 alt={products[2].slug}
+                priority
               />
               <div className="absolute bottom-0 left-0 flex w-full px-4 pb-4 @container/label">
                 <div className="flex items-center rounded-full border bg-white/70 p-1 text-xs font-semibold text-black backdrop-blur-md dark:border-neutral-800 dark:bg-black/70 dark:text-white">
