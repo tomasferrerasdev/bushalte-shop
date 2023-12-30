@@ -1,5 +1,6 @@
 import { TopMenu } from '@/components';
-import { Sidebar } from '@/components/ui/sidebar/Sidebar';
+import { CartMenu } from '@/components/ui/cart-menu/CartMenu';
+import { UserMenu } from '@/components/ui/user-menu/UserMenu';
 
 export default function ShopLayout({
   children,
@@ -10,7 +11,8 @@ export default function ShopLayout({
     <main className="bg-black min-h-screen text-[#EFEFEF] px-4 sm:px-6">
       <div className="max-w-[1920px] mx-auto">
         <TopMenu />
-        <Sidebar />
+        <UserMenu />
+        <CartMenu />
         {children}
       </div>
     </main>

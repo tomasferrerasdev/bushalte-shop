@@ -8,7 +8,7 @@ interface Props {
 export const FeaturedProductGrid = ({ products }: Props) => {
   return (
     <>
-      <div className="grid gap-4 md:grid-cols-6 md:grid-rows-2">
+      <div className="grid gap-4 md:grid-cols-6 md:grid-rows-2 pb-10">
         <div className="md:col-span-4 md:row-span-2">
           <Link
             href={`/product/${products[0].slug}`}
