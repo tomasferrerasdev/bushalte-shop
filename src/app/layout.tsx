@@ -1,4 +1,5 @@
 import { cascadia } from '@/config/fonts';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import type { Metadata } from 'next';
 import './globals.css';
 
@@ -14,6 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <SpeedInsights />
       <body className={cascadia.className}>{children}</body>
     </html>
   );
