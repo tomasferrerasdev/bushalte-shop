@@ -13,10 +13,10 @@ export const ProductGrid = ({ products }: Props) => {
         {products.map((product) => (
           <div className="md:col-span-3 md:row-span-2" key={product.slug}>
             <Link
-              href="/"
+              href={`/product/${product.slug}`}
               className="relative block aspect-square h-full w-full"
             >
-              <div className="group flex h-full w-full items-center justify-center overflow-hidden rounded-lg border bg-white hover:border-teal-800 dark:bg-black relative border-neutral-200 dark:border-neutral-800">
+              <div className="group flex h-full w-full items-center justify-center overflow-hidden rounded-lg border bg-white hover:border-accent dark:bg-black relative border-neutral-200 dark:border-neutral-800">
                 <Image
                   className="relative h-full w-full object-contain transition duration-300 ease-in-out group-hover:scale-105"
                   fill
@@ -29,7 +29,7 @@ export const ProductGrid = ({ products }: Props) => {
                     <h3 className="mr-4 line-clamp-2 flex-grow pl-2 leading-none tracking-tight">
                       {product.title}
                     </h3>
-                    <p className="flex-none rounded-full bg-teal-800 p-2 text-white">
+                    <p className="flex-none rounded-full bg-white p-2 text-black">
                       ${product.price}
                       <span className="ml-1 hidden @[275px]/label:inline">
                         USD
@@ -45,9 +45,3 @@ export const ProductGrid = ({ products }: Props) => {
     </>
   );
 };
-
-/*
-size: 'full' | 'half';sizes={
-            size === 'full' ? '(min-width: 768px) 66vw, 100vw' : '(min-width: 768px) 33vw, 100vw'
-          }
-*/

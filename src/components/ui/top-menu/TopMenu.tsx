@@ -1,7 +1,8 @@
 'use client';
 import { useUiStore } from '@/store/ui/ui-store';
+import Image from 'next/image';
 import Link from 'next/link';
-import { IoCartOutline, IoMenuOutline, IoSearchOutline } from 'react-icons/io5';
+import { IoCartOutline } from 'react-icons/io5';
 import { Logo } from '../logo/Logo';
 
 export const TopMenu = () => {
@@ -10,20 +11,23 @@ export const TopMenu = () => {
     <nav className="flex py-4 sm:py-6 justify-between items-center w-full">
       <Logo />
 
-      <div className="flex items-center">
-        <Link href="/search" className="px-4">
-          <IoSearchOutline className="w-5 h-5" />
-        </Link>
-        <Link href="/cart" className="px-4">
-          <div className="relative">
-            <span className="absolute text-xs rounded-full px-1 font-medium -top-2 -right-2 bg-teal-600">
+      <div className="flex items-center gap-4">
+        <Link href="/cart">
+          <div className="relative border-gray-400 border-[1px] rounded-full h-10 w-10 flex items-center justify-center">
+            <span className="absolute text-xs rounded-full px-1 font-medium -top-[3px] -right-[3px] bg-accent text-black">
               3
             </span>
             <IoCartOutline className="w-5 h-5" />
           </div>
         </Link>
-        <button className="px-4 rounded-sm transition-all" onClick={openMenu}>
-          <IoMenuOutline className="w-7 h-7" />
+        <button onClick={openMenu} title="menu">
+          <Image
+            src={`/images/sticker.webp`}
+            width={48}
+            height={48}
+            alt="avatar"
+            className="w-10 h-10 rounded-full"
+          />
         </button>
       </div>
     </nav>

@@ -10,8 +10,11 @@ export const FeaturedProductGrid = ({ products }: Props) => {
     <>
       <div className="grid gap-4 md:grid-cols-6 md:grid-rows-2">
         <div className="md:col-span-4 md:row-span-2">
-          <Link href="/" className="relative block aspect-square h-full w-full">
-            <div className="group flex h-full w-full items-center justify-center overflow-hidden rounded-lg border bg-white hover:border-teal-800 dark:bg-black relative border-neutral-200 dark:border-neutral-800">
+          <Link
+            href={`/product/${products[0].slug}`}
+            className="relative block aspect-square h-full w-full"
+          >
+            <div className="group flex h-full w-full items-center justify-center overflow-hidden rounded-lg border bg-white hover:border-accent dark:bg-black relative border-neutral-200 dark:border-neutral-800">
               <Image
                 className="relative h-full w-full object-contain transition duration-300 ease-in-out group-hover:scale-105"
                 fill
@@ -24,7 +27,7 @@ export const FeaturedProductGrid = ({ products }: Props) => {
                   <h3 className="mr-4 line-clamp-2 flex-grow pl-2 leading-none tracking-tight">
                     {products[0].title}
                   </h3>
-                  <p className="flex-none rounded-full bg-teal-800 p-2 text-white">
+                  <p className="flex-none rounded-full bg-white p-2 text-black">
                     ${products[0].price}
                     <span className="ml-1 hidden @[275px]/label:inline">
                       USD
@@ -36,8 +39,11 @@ export const FeaturedProductGrid = ({ products }: Props) => {
           </Link>
         </div>
         <div className="md:col-span-2 md:row-span-1">
-          <Link href="/" className="relative block aspect-square h-full w-full">
-            <div className="group flex h-full w-full items-center justify-center overflow-hidden rounded-lg border bg-white hover:border-teal-800 dark:bg-black relative border-neutral-200 dark:border-neutral-800">
+          <Link
+            href={`/product/${products[1].slug}`}
+            className="relative block aspect-square h-full w-full"
+          >
+            <div className="group flex h-full w-full items-center justify-center overflow-hidden rounded-lg border bg-white hover:border-accent dark:bg-black relative border-neutral-200 dark:border-neutral-800">
               <Image
                 className="relative h-full w-full object-contain transition duration-300 ease-in-out group-hover:scale-105"
                 fill
@@ -50,7 +56,7 @@ export const FeaturedProductGrid = ({ products }: Props) => {
                   <h3 className="mr-4 line-clamp-2 flex-grow pl-2 leading-none tracking-tight">
                     {products[1].title}
                   </h3>
-                  <p className="flex-none rounded-full bg-teal-800 p-2 text-white">
+                  <p className="flex-none rounded-full bg-white p-2 text-black">
                     ${products[1].price}
                     <span className="ml-1 hidden @[275px]/label:inline">
                       USD
@@ -62,8 +68,11 @@ export const FeaturedProductGrid = ({ products }: Props) => {
           </Link>
         </div>
         <div className="md:col-span-2 md:row-span-1">
-          <Link href="/" className="relative block aspect-square h-full w-full">
-            <div className="group flex h-full w-full items-center justify-center overflow-hidden rounded-lg border bg-white hover:border-teal-800 dark:bg-black relative border-neutral-200 dark:border-neutral-800">
+          <Link
+            href={`/product/${products[2].slug}`}
+            className="relative block aspect-square h-full w-full"
+          >
+            <div className="group flex h-full w-full items-center justify-center overflow-hidden rounded-lg border bg-white hover:border-accent dark:bg-black relative border-neutral-200 dark:border-neutral-800">
               <Image
                 className="relative h-full w-full object-contain transition duration-300 ease-in-out group-hover:scale-105"
                 fill
@@ -76,7 +85,7 @@ export const FeaturedProductGrid = ({ products }: Props) => {
                   <h3 className="mr-4 line-clamp-2 flex-grow pl-2 leading-none tracking-tight">
                     {products[2].title}
                   </h3>
-                  <p className="flex-none rounded-full bg-teal-800 p-2 text-white">
+                  <p className="flex-none rounded-full p-2 bg-white text-black">
                     ${products[2].price}
                     <span className="ml-1 hidden @[275px]/label:inline">
                       USD
